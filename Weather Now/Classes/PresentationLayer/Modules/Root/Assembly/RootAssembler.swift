@@ -27,9 +27,9 @@ class RootModuleAssembler: Assembly {
         
         container.register(RootModuleInput.self) { resolver in
             let presenter = RootPresenter()
-            
-            let viewController = resolver.resolve(RootViewController.self, argument: presenter)
-            
+            // swiftlint:disable force_unwrapping
+            let viewController = resolver.resolve(RootViewController.self, argument: presenter)!
+            // swiftlint:enable force_unwrapping
             presenter.view = viewController
             presenter.interactor = resolver.resolve(RootInteractor.self, argument: presenter)
             presenter.router = resolver.resolve(RootRouter.self, argument: viewController)

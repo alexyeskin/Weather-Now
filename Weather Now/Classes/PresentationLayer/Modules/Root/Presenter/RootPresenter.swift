@@ -8,12 +8,6 @@
 
 import UIKit
 
-enum AuthState {
-    case unauth
-    case varification
-    case auth
-}
-
 class RootPresenter {
     weak var view: RootViewInput!
     weak var output: RootModuleOutput?
