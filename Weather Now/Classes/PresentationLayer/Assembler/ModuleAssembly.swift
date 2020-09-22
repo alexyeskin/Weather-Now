@@ -16,6 +16,14 @@ class ModuleAssembly {
     }
     
     init(parent: Assembler) {
-        assembler = Assembler([RootModuleAssembler()], parent: parent)
+        assembler = Assembler(
+            [
+                RootModuleAssembler(),
+                TabBarModuleAssembler(),
+                WeatherModuleAssembler(),
+                ForecastModuleAssembler()
+            ],
+            parent: parent
+        )
     }
 }

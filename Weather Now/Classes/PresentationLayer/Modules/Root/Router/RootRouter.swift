@@ -10,12 +10,17 @@ import UIKit
 
 class RootRouter: RootRouterInput {
 	weak var view: UIViewController?
-    weak var splash: UIViewController?
-    weak var verification: UIViewController?
-    weak var blockScreen: UIViewController?
 
     var childs = NSPointerArray.weakObjects()
 }
 
 extension RootRouter {
+    func presentTabBar() {
+        guard let view = view else {
+            return
+        }
+        
+        let module = TabBarModuleConfigurator().configureModule()
+        view.addChildController(module.viewController)
+    }
 }

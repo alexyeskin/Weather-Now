@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '13.0'
 
 use_frameworks!
 inhibit_all_warnings!
@@ -9,7 +9,8 @@ end
 
 def helpers_pods
     pod 'R.swift', '5.0.0'
-    pod 'Moya', '12.0.1'
+    pod 'Alamofire', '~> 5.2'
+    pod 'SnapKit', '~> 5.0.0'
 end
 
 target 'Weather Now' do

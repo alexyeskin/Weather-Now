@@ -31,4 +31,5 @@ protocol RootInteractorOutput: class {
 }
 
 protocol RootRouterInput {
+    func presentTabBar()
 }

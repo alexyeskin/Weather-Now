@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		069B272251B618BF528BBCD9 /* ForecastAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110B9E964D990EEF29097A8 /* ForecastAssembler.swift */; };
+		2694E0828E887668F03D3BC0 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919D80BCE76AF76C1C99A00 /* TabBarConfigurator.swift */; };
+		3D706062FB026E703A0BB72E /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECCAAC78D9509C6F0CD7BF9 /* WeatherInteractor.swift */; };
+		460452666A68C358A2703178 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD67F53680FC7313C3DE12A /* TabBarViewController.swift */; };
 		49E885C21B74B03F89F60FAB /* Pods_Weather_Now.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934FB2BBCA4734BA4C8E3302 /* Pods_Weather_Now.framework */; };
+		59ACBDF32FEE2B23E4FFA8C4 /* WeatherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796FD535B23982AFB2440DD /* WeatherProtocols.swift */; };
+		5D0D3AAB3B17A2839299F7A1 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B10D79D1DB96467A39B5A /* WeatherViewController.swift */; };
+		5F9FAB6C0F452BCFB4B1752E /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86C7AD0E7F1356019488E /* WeatherPresenter.swift */; };
+		6739AE7097BF53A21CABCFC5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649A2EE971258D42F89369D /* ForecastViewController.swift */; };
+		68D349E783AF1E72E4C435C2 /* WeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9413C36B9808D9E1CDE36 /* WeatherRouter.swift */; };
+		6A1A62E237A140D29CCF2879 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CC9EE4CA6048B0A587E05 /* TabBarProtocols.swift */; };
+		6A3932E6DC9AADFA9319756E /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8887CFA7A1C3B9FF6361C /* TabBarRouter.swift */; };
+		7C5C06131C45BCF7A2D4DB97 /* ForecastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3279FEB2E20947931D3244 /* ForecastRouter.swift */; };
+		7CF6F113670F4923362AF5A2 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA12BE8E8DCC69AD87A52B9 /* TabBarPresenter.swift */; };
+		7D6706A4E80411F326C0B3C6 /* ForecastProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149B44AB5BA89F6D7645F1B /* ForecastProtocols.swift */; };
+		9276328F00AFBD8FD3C2A52C /* TabBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4A6BF931BA1B6884889C6 /* TabBarAssembler.swift */; };
+		98AC8D602A8612ED2A282EF3 /* ForecastConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB907BB6AB7C5694367772D /* ForecastConfigurator.swift */; };
+		9C2F715C61AC62A6B6403A04 /* WeatherAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD72570D204C4B2CA03291 /* WeatherAssembler.swift */; };
+		A3426322E60922E435CA8CF1 /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6580A9A01540A1377405F19 /* ForecastPresenter.swift */; };
+		AB972640628611F7CEA56468 /* WeatherConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C76747F62F5B9E061BA7CBC /* WeatherConfigurator.swift */; };
 		B33AE56921ECAD210016966A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE52521ECAD210016966A /* Constants.swift */; };
 		B33AE56A21ECAD210016966A /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE52821ECAD210016966A /* Presentable.swift */; };
 		B33AE56B21ECAD210016966A /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52C21ECAD210016966A /* Localization.strings */; };
 		B33AE56C21ECAD210016966A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52E21ECAD210016966A /* Assets.xcassets */; };
 		B33AE56D21ECAD210016966A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53021ECAD210016966A /* R.generated.swift */; };
-		B33AE57021ECAD210016966A /* SharedSorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53D21ECAD210016966A /* SharedSorage.swift */; };
-		B33AE57121ECAD210016966A /* KeyValueStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53F21ECAD210016966A /* KeyValueStoring.swift */; };
 		B33AE57221ECAD210016966A /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54121ECAD210016966A /* ServicesAssembly.swift */; };
 		B33AE57321ECAD210016966A /* CoreComponentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54221ECAD210016966A /* CoreComponentAssembly.swift */; };
 		B33AE57421ECAD210016966A /* ProxyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54321ECAD210016966A /* ProxyAssembly.swift */; };
@@ -34,11 +51,30 @@
 		B33AE58221ECAD210016966A /* RootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56421ECAD210016966A /* RootProtocols.swift */; };
 		B33AE58321ECAD210016966A /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56621ECAD210016966A /* RootInteractor.swift */; };
 		B33AE58421ECAD210016966A /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56821ECAD210016966A /* RootRouter.swift */; };
+		DEF9337B540C1BA138FFCC58 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F63FD72B2B681852956C90 /* TabBarInteractor.swift */; };
+		E437E3DF25195E2200E02818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E437E3DE25195E2200E02818 /* Main.storyboard */; };
+		E437E3E12519628000E02818 /* UIViewContoller+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437E3E02519628000E02818 /* UIViewContoller+Extensions.swift */; };
+		E46B90532519CFAA00E0207D /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90522519CFAA00E0207D /* NetworkCore.swift */; };
+		E46B90552519CFB500E0207D /* NetworkCoreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90542519CFB500E0207D /* NetworkCoreImp.swift */; };
+		F506401CADF6608383365C47 /* ForecastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B46A9E3EBD79767212021 /* ForecastInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA9413C36B9808D9E1CDE36 /* WeatherRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherRouter.swift; sourceTree = "<group>"; };
+		3919D80BCE76AF76C1C99A00 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		49C8887CFA7A1C3B9FF6361C /* TabBarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		4BB907BB6AB7C5694367772D /* ForecastConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastConfigurator.swift; sourceTree = "<group>"; };
+		5ECCAAC78D9509C6F0CD7BF9 /* WeatherInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
+		6B3279FEB2E20947931D3244 /* ForecastRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastRouter.swift; sourceTree = "<group>"; };
+		7149B44AB5BA89F6D7645F1B /* ForecastProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastProtocols.swift; sourceTree = "<group>"; };
+		766B10D79D1DB96467A39B5A /* WeatherViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		7C76747F62F5B9E061BA7CBC /* WeatherConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherConfigurator.swift; sourceTree = "<group>"; };
+		822CC9EE4CA6048B0A587E05 /* TabBarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		934FB2BBCA4734BA4C8E3302 /* Pods_Weather_Now.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_Now.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950B46A9E3EBD79767212021 /* ForecastInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastInteractor.swift; sourceTree = "<group>"; };
+		9649A2EE971258D42F89369D /* ForecastViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		A3963D48A0AD1254633A6E74 /* Pods-Weather Now.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather Now.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather Now/Pods-Weather Now.release.xcconfig"; sourceTree = "<group>"; };
+		A9C86C7AD0E7F1356019488E /* WeatherPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
 		B33AE50D21ECAA2E0016966A /* Weather Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33AE52521ECAD210016966A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B33AE52821ECAD210016966A /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
@@ -46,8 +82,6 @@
 		B33AE52E21ECAD210016966A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33AE53021ECAD210016966A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B33AE53121ECAD210016966A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B33AE53D21ECAD210016966A /* SharedSorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedSorage.swift; sourceTree = "<group>"; };
-		B33AE53F21ECAD210016966A /* KeyValueStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStoring.swift; sourceTree = "<group>"; };
 		B33AE54121ECAD210016966A /* ServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
 		B33AE54221ECAD210016966A /* CoreComponentAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreComponentAssembly.swift; sourceTree = "<group>"; };
 		B33AE54321ECAD210016966A /* ProxyAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyAssembly.swift; sourceTree = "<group>"; };
@@ -67,7 +101,19 @@
 		B33AE56421ECAD210016966A /* RootProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootProtocols.swift; sourceTree = "<group>"; };
 		B33AE56621ECAD210016966A /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		B33AE56821ECAD210016966A /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		C0F63FD72B2B681852956C90 /* TabBarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		C110B9E964D990EEF29097A8 /* ForecastAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastAssembler.swift; sourceTree = "<group>"; };
+		C7BD72570D204C4B2CA03291 /* WeatherAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherAssembler.swift; sourceTree = "<group>"; };
 		CC1C70988B80A999F864A4F7 /* Pods-Weather Now.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather Now.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather Now/Pods-Weather Now.debug.xcconfig"; sourceTree = "<group>"; };
+		CFD67F53680FC7313C3DE12A /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E437E3DE25195E2200E02818 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E437E3E02519628000E02818 /* UIViewContoller+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewContoller+Extensions.swift"; sourceTree = "<group>"; };
+		E46B90522519CFAA00E0207D /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
+		E46B90542519CFB500E0207D /* NetworkCoreImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreImp.swift; sourceTree = "<group>"; };
+		E6580A9A01540A1377405F19 /* ForecastPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastPresenter.swift; sourceTree = "<group>"; };
+		EDA12BE8E8DCC69AD87A52B9 /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		F0C4A6BF931BA1B6884889C6 /* TabBarAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarAssembler.swift; sourceTree = "<group>"; };
+		F796FD535B23982AFB2440DD /* WeatherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +128,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0810F4897BB5F71096B9CD95 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A9C86C7AD0E7F1356019488E /* WeatherPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1075FF031F8289DF4E148B3C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4BB907BB6AB7C5694367772D /* ForecastConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1BFF5275ED869E894EED4CC8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C7BD72570D204C4B2CA03291 /* WeatherAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		297A3F64576A5A7A48AEFEE9 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				3919D80BCE76AF76C1C99A00 /* TabBarConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		2B3F39264F9FAAF4D54236F7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1FA9413C36B9808D9E1CDE36 /* WeatherRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E8421526273CA3C25A4D38C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6B3279FEB2E20947931D3244 /* ForecastRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		42665B8F063A910A19BC2765 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				999E07339E0AFB3F292AA13F /* View */,
+				EC9308DE456846D0421A19FF /* Presenter */,
+				90EEE48BC8E7BD5538A604A2 /* Interactor */,
+				3E8421526273CA3C25A4D38C /* Router */,
+				1075FF031F8289DF4E148B3C /* Configurator */,
+				7289AB553CD12E8777E31266 /* Assembly */,
+				8D16A4D27707C8B5AC58A68B /* Protocols */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		4BFC2C2F40AE5E1AC1BFCA5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				766B10D79D1DB96467A39B5A /* WeatherViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5D3C21E4333CDDA2CA4B6574 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,12 +207,105 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7289AB553CD12E8777E31266 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C110B9E964D990EEF29097A8 /* ForecastAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		75686E00C17EE90B41422A48 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F796FD535B23982AFB2440DD /* WeatherProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		83348B697F3CC7D515BDEC8F /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F0C4A6BF931BA1B6884889C6 /* TabBarAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		86105393D828852C9BD08DA8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EDA12BE8E8DCC69AD87A52B9 /* TabBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8D16A4D27707C8B5AC58A68B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7149B44AB5BA89F6D7645F1B /* ForecastProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8DB5BC3EA3CE715E98D29F4F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C0F63FD72B2B681852956C90 /* TabBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		8FC6A5A87E825FA2F1389E09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				934FB2BBCA4734BA4C8E3302 /* Pods_Weather_Now.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90EEE48BC8E7BD5538A604A2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				950B46A9E3EBD79767212021 /* ForecastInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		951A5AF831794C84A8A27017 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC2C2F40AE5E1AC1BFCA5E /* View */,
+				0810F4897BB5F71096B9CD95 /* Presenter */,
+				C6CCDAC9202CB037C44B838B /* Interactor */,
+				2B3F39264F9FAAF4D54236F7 /* Router */,
+				D0FA7B07365A51D34F27D3E7 /* Configurator */,
+				1BFF5275ED869E894EED4CC8 /* Assembly */,
+				75686E00C17EE90B41422A48 /* Protocols */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		999E07339E0AFB3F292AA13F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9649A2EE971258D42F89369D /* ForecastViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB0C7A2D51B6405AC3D0ECC8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BF429C66C2927A4E5054A0EA /* View */,
+				86105393D828852C9BD08DA8 /* Presenter */,
+				8DB5BC3EA3CE715E98D29F4F /* Interactor */,
+				F5F9A605AF8E9CBE91283611 /* Router */,
+				297A3F64576A5A7A48AEFEE9 /* Configurator */,
+				83348B697F3CC7D515BDEC8F /* Assembly */,
+				E64016065D01EFB9836FD2C3 /* Protocols */,
+				E437E3DE25195E2200E02818 /* Main.storyboard */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		B33AE50421ECAA2E0016966A = {
@@ -141,6 +350,7 @@
 		B33AE52621ECAD210016966A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E437E3E02519628000E02818 /* UIViewContoller+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +442,7 @@
 		B33AE53621ECAD210016966A /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				E46B90542519CFB500E0207D /* NetworkCoreImp.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -262,6 +473,7 @@
 		B33AE53A21ECAD210016966A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E46B90522519CFAA00E0207D /* NetworkCore.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -269,7 +481,6 @@
 		B33AE53C21ECAD210016966A /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE53D21ECAD210016966A /* SharedSorage.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -277,7 +488,6 @@
 		B33AE53E21ECAD210016966A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE53F21ECAD210016966A /* KeyValueStoring.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -388,6 +598,9 @@
 			isa = PBXGroup;
 			children = (
 				B33AE55921ECAD210016966A /* Root */,
+				AB0C7A2D51B6405AC3D0ECC8 /* TabBar */,
+				951A5AF831794C84A8A27017 /* Weather */,
+				42665B8F063A910A19BC2765 /* Forecast */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -463,6 +676,54 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		BF429C66C2927A4E5054A0EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFD67F53680FC7313C3DE12A /* TabBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6CCDAC9202CB037C44B838B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5ECCAAC78D9509C6F0CD7BF9 /* WeatherInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0FA7B07365A51D34F27D3E7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				7C76747F62F5B9E061BA7CBC /* WeatherConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E64016065D01EFB9836FD2C3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				822CC9EE4CA6048B0A587E05 /* TabBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EC9308DE456846D0421A19FF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E6580A9A01540A1377405F19 /* ForecastPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F5F9A605AF8E9CBE91283611 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				49C8887CFA7A1C3B9FF6361C /* TabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,6 +787,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E437E3DF25195E2200E02818 /* Main.storyboard in Resources */,
 				B33AE57F21ECAD210016966A /* Root.storyboard in Resources */,
 				B33AE56C21ECAD210016966A /* Assets.xcassets in Resources */,
 				B33AE57C21ECAD210016966A /* LaunchScreen.storyboard in Resources */,
@@ -629,17 +891,39 @@
 				B33AE57B21ECAD210016966A /* ModuleAssembly.swift in Sources */,
 				B33AE57321ECAD210016966A /* CoreComponentAssembly.swift in Sources */,
 				B33AE58121ECAD210016966A /* RootConfigurator.swift in Sources */,
-				B33AE57121ECAD210016966A /* KeyValueStoring.swift in Sources */,
 				B33AE58221ECAD210016966A /* RootProtocols.swift in Sources */,
 				B33AE56D21ECAD210016966A /* R.generated.swift in Sources */,
+				E46B90532519CFAA00E0207D /* NetworkCore.swift in Sources */,
+				E437E3E12519628000E02818 /* UIViewContoller+Extensions.swift in Sources */,
 				B33AE57621ECAD210016966A /* ConfiguratorProtocol.swift in Sources */,
-				B33AE57021ECAD210016966A /* SharedSorage.swift in Sources */,
 				B33AE57E21ECAD210016966A /* RootPresenter.swift in Sources */,
 				B33AE57821ECAD210016966A /* AppearanceConfigurator.swift in Sources */,
 				B33AE57221ECAD210016966A /* ServicesAssembly.swift in Sources */,
 				B33AE57521ECAD210016966A /* BusinessLayerAssembly.swift in Sources */,
 				B33AE57D21ECAD210016966A /* RootAssembler.swift in Sources */,
 				B33AE57921ECAD210016966A /* ApplicationAssembler.swift in Sources */,
+				5D0D3AAB3B17A2839299F7A1 /* WeatherViewController.swift in Sources */,
+				5F9FAB6C0F452BCFB4B1752E /* WeatherPresenter.swift in Sources */,
+				3D706062FB026E703A0BB72E /* WeatherInteractor.swift in Sources */,
+				68D349E783AF1E72E4C435C2 /* WeatherRouter.swift in Sources */,
+				AB972640628611F7CEA56468 /* WeatherConfigurator.swift in Sources */,
+				9C2F715C61AC62A6B6403A04 /* WeatherAssembler.swift in Sources */,
+				59ACBDF32FEE2B23E4FFA8C4 /* WeatherProtocols.swift in Sources */,
+				6739AE7097BF53A21CABCFC5 /* ForecastViewController.swift in Sources */,
+				A3426322E60922E435CA8CF1 /* ForecastPresenter.swift in Sources */,
+				F506401CADF6608383365C47 /* ForecastInteractor.swift in Sources */,
+				E46B90552519CFB500E0207D /* NetworkCoreImp.swift in Sources */,
+				7C5C06131C45BCF7A2D4DB97 /* ForecastRouter.swift in Sources */,
+				98AC8D602A8612ED2A282EF3 /* ForecastConfigurator.swift in Sources */,
+				069B272251B618BF528BBCD9 /* ForecastAssembler.swift in Sources */,
+				7D6706A4E80411F326C0B3C6 /* ForecastProtocols.swift in Sources */,
+				460452666A68C358A2703178 /* TabBarViewController.swift in Sources */,
+				7CF6F113670F4923362AF5A2 /* TabBarPresenter.swift in Sources */,
+				DEF9337B540C1BA138FFCC58 /* TabBarInteractor.swift in Sources */,
+				6A3932E6DC9AADFA9319756E /* TabBarRouter.swift in Sources */,
+				2694E0828E887668F03D3BC0 /* TabBarConfigurator.swift in Sources */,
+				9276328F00AFBD8FD3C2A52C /* TabBarAssembler.swift in Sources */,
+				6A1A62E237A140D29CCF2879 /* TabBarProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

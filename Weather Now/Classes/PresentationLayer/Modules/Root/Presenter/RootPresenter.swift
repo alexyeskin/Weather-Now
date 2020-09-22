@@ -28,6 +28,7 @@ extension RootPresenter: RootModuleInput {
 
 extension RootPresenter: RootViewOutput {
     func viewIsReady() {
+        router.presentTabBar()
     }
 }
 

@@ -8,5 +8,6 @@
 
 import Foundation
 
-struct Constants {
+enum Constants {
+    static let baseURL = ""
 }

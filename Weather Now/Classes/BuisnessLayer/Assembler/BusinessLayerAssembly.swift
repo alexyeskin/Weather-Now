@@ -6,7 +6,6 @@
 //  Copyright © 2020 Alexander Yeskin. All rights reserved.
 //
 
-import Moya
 import Swinject
 
 class BusinessLayerAssembly {

@@ -16,16 +16,23 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+    /// Storyboard `Main`.
+    static let main = _R.storyboard.main()
     /// Storyboard `Root`.
     static let root = _R.storyboard.root()
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    }
+    
+    /// `UIStoryboard(name: "Main", bundle: ...)`
+    static func main(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.main)
     }
     
     /// `UIStoryboard(name: "Root", bundle: ...)`
@@ -57,6 +64,7 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try launchScreen.validate()
+      try main.validate()
       try root.validate()
     }
     
@@ -69,6 +77,40 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, *) {
         }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct main: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let forecastViewController = StoryboardViewControllerResource<ForecastViewController>(identifier: "ForecastViewController")
+      let name = "Main"
+      let tabBarController = StoryboardViewControllerResource<TabBarController>(identifier: "TabBarController")
+      let weatherViewController = StoryboardViewControllerResource<WeatherViewController>(identifier: "WeatherViewController")
+      
+      func forecastViewController(_: Void = ()) -> ForecastViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: forecastViewController)
+      }
+      
+      func tabBarController(_: Void = ()) -> TabBarController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: tabBarController)
+      }
+      
+      func weatherViewController(_: Void = ()) -> WeatherViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: weatherViewController)
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "cloud.sun", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'cloud.sun' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "cloud.sun.fill", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'cloud.sun.fill' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "sun.max", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'sun.max' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "sun.max.fill", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'sun.max.fill' is used in storyboard 'Main', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.main().forecastViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'forecastViewController' could not be loaded from storyboard 'Main' as 'ForecastViewController'.") }
+        if _R.storyboard.main().tabBarController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'tabBarController' could not be loaded from storyboard 'Main' as 'TabBarController'.") }
+        if _R.storyboard.main().weatherViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'weatherViewController' could not be loaded from storyboard 'Main' as 'WeatherViewController'.") }
       }
       
       fileprivate init() {}
