@@ -9,6 +9,10 @@
 import Swinject
 
 final class CoreComponentAssembly: Assembly {
-    func assemble(container: Container) {        
+    func assemble(container: Container) {
+        container.register(NetworkCore.self) { _ in
+            let core = NetworkCoreImp()
+            return core
+        }.inObjectScope(.container)
     }
 }

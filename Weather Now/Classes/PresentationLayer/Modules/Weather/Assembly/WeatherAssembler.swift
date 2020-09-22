@@ -11,9 +11,10 @@ import UIKit
 
 class WeatherModuleAssembler: Assembly {
     func assemble(container: Container) {
-        container.register(WeatherInteractor.self) { (_, presenter: WeatherPresenter) in
+        container.register(WeatherInteractor.self) { (resolver, presenter: WeatherPresenter) in
             let interactor = WeatherInteractor()
             interactor.output = presenter
+            interactor.weatherService = resolver.resolve(WeatherService.self)
             
             return interactor
         }

@@ -25,6 +25,7 @@ protocol WeatherModuleOutput: class {
 }
 
 protocol WeatherInteractorInput {
+    func getWeather()
 }
 
 protocol WeatherInteractorOutput: class {

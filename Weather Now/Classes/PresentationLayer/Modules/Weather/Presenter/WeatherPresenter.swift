@@ -28,6 +28,7 @@ extension WeatherPresenter: WeatherModuleInput {
 
 extension WeatherPresenter: WeatherViewOutput {
     func viewIsReady() {
+        interactor.getWeather()
     }
 }
 

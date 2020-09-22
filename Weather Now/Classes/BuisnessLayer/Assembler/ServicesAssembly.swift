@@ -9,6 +9,11 @@
 import Swinject
 
 final class ServicesAssembly: Assembly {
-    func assemble(container: Container) {      
+    func assemble(container: Container) {
+        container.register(WeatherService.self) { resolver in
+            let service = WeatherServiceImp()
+            service.networkCore = resolver.resolve(NetworkCore.self)
+            return service
+        }
     }
 }

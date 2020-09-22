@@ -10,9 +10,13 @@ import Foundation
 
 class WeatherInteractor {
     weak var output: WeatherInteractorOutput!
+    var weatherService: WeatherService!
 }
 
 // MARK: - WeatherInteractorInput
 
 extension WeatherInteractor: WeatherInteractorInput {
+    func getWeather() {
+        weatherService.getCurrentWeather()
+    }
 }

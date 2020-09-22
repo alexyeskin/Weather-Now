@@ -3,4 +3,133 @@
    uuid = "24B92F90-323F-4E4D-9A7D-FED739E5372C"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3822A004-E0CB-4B2D-B42A-D495D1D387AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather Now/Classes/BuisnessLayer/Services/Implementation/WeatherServiceImp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getCurrentWeather()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3822A004-E0CB-4B2D-B42A-D495D1D387AD - c4ea2c5e03eeb7a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Weather_Now.WeatherResponseModel, Weather_Now.NetworkCoreError&gt;) -&gt; () in Weather_Now.WeatherServiceImp.getCurrentWeather() -&gt; ()"
+                  moduleName = "Weather Now"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newreason/Documents/Weather-Now/Weather%20Now/Classes/BuisnessLayer/Services/Implementation/WeatherServiceImp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "3822A004-E0CB-4B2D-B42A-D495D1D387AD - c4ea2c5e03eeb7a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Weather_Now.WeatherResponseModel, Weather_Now.NetworkCoreError&gt;) -&gt; () in Weather_Now.WeatherServiceImp.getCurrentWeather() -&gt; ()"
+                  moduleName = "Weather Now"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newreason/Documents/Weather-Now/Weather%20Now/Classes/BuisnessLayer/Services/Implementation/WeatherServiceImp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "81">
+               </Location>
+               <Location
+                  uuid = "3822A004-E0CB-4B2D-B42A-D495D1D387AD - c4ea2c5e03eeb7a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Weather_Now.WeatherResponseModel, Weather_Now.NetworkCoreError&gt;) -&gt; () in Weather_Now.WeatherServiceImp.getCurrentWeather() -&gt; ()"
+                  moduleName = "Weather Now"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newreason/Documents/Weather-Now/Weather%20Now/Classes/BuisnessLayer/Services/Implementation/WeatherServiceImp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "404">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F1435B0-CA99-42AE-B419-BB6F7BC25D00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather Now/Classes/BuisnessLayer/Core/Network/Implementation/NetworkCoreImp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "loadForecast(from:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F1435B0-CA99-42AE-B419-BB6F7BC25D00 - a2d2eef0847a84b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather_Now.NetworkCoreImp.loadForecast(from: Weather_Now.CoordinatesModel, completion: (Swift.Result&lt;Swift.String, Weather_Now.NetworkCoreError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Weather Now"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newreason/Documents/Weather-Now/Weather%20Now/Classes/BuisnessLayer/Core/Network/Implementation/NetworkCoreImp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1752">
+               </Location>
+               <Location
+                  uuid = "7F1435B0-CA99-42AE-B419-BB6F7BC25D00 - e084015254fc8016"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in Weather_Now.NetworkCoreImp.loadForecast(from: Weather_Now.CoordinatesModel, completion: (Swift.Result&lt;Swift.String, Weather_Now.NetworkCoreError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Weather Now"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newreason/Documents/Weather-Now/Weather%20Now/Classes/BuisnessLayer/Core/Network/Implementation/NetworkCoreImp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACC48765-A6E6-4C95-BE90-2CFF43CBA752"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather Now/Classes/BuisnessLayer/Core/Network/Implementation/NetworkCoreImp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "loadForecast(from:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

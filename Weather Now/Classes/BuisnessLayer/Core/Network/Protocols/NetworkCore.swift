@@ -3,16 +3,25 @@
 //  Weather Now
 //
 //  Created by Alexander Eskin on 22.09.20.
-//  Copyright © 2020 PixelPlex. All rights reserved.
+//  Copyright © 2020 Alexander Yeskin. All rights reserved.
 //
 
 import Foundation
 
 enum NetworkCoreError: Error {
     case badURL
+    case decodingError
     case noConnection
 }
 
 protocol NetworkCore {
-    func loadForecast(completion: (Result<String, NetworkCoreError>) -> Void)
+    func loadCurrentWeather(
+        from coordinates: CoordinatesModel,
+        completion: @escaping (Result<WeatherResponseModel, NetworkCoreError>) -> Void
+    )
+    
+    func loadForecast(
+        from coordinates: CoordinatesModel,
+        completion: @escaping (Result<String, NetworkCoreError>) -> Void
+    )
 }
