@@ -13,6 +13,7 @@ final class ServicesAssembly: Assembly {
         container.register(WeatherService.self) { resolver in
             let service = WeatherServiceImp()
             service.networkCore = resolver.resolve(NetworkCore.self)
+            service.mapperCore = resolver.resolve(MapperCore.self)
             return service
         }
     }

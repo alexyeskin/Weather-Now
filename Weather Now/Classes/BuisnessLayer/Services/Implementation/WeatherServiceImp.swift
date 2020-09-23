@@ -10,14 +10,20 @@ import Foundation
 
 final class WeatherServiceImp: WeatherService {
     var networkCore: NetworkCore!
+    var mapperCore: MapperCore!
     
-    func getCurrentWeather() {
+    func getCurrentWeather(completion: @escaping (Result<WeatherEntity, WeatherServiceError>) -> Void) {
         let coordinates = CoordinatesModel(latitude: Constants.latitude, longitude: Constants.longitude)
         
-        networkCore.loadCurrentWeather(from: coordinates) { result in
+        networkCore.loadCurrentWeather(from: coordinates) { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            
             switch result {
-            case .success(let forecast):
-                print(forecast)
+            case .success(let model):
+                let entity = self.mapperCore.mapWeatherResponseModel(model)
+                completion(.success(entity))
                 
             case .failure(let error):
                 print(error.localizedDescription)

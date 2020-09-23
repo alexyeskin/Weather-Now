@@ -14,5 +14,10 @@ final class CoreComponentAssembly: Assembly {
             let core = NetworkCoreImp()
             return core
         }.inObjectScope(.container)
+        
+        container.register(MapperCore.self) { _ in
+            let core = MapperCoreImp()
+            return core
+        }.inObjectScope(.container)
     }
 }

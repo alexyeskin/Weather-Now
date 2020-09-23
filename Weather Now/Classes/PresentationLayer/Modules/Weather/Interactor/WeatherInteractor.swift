@@ -17,6 +17,17 @@ class WeatherInteractor {
 
 extension WeatherInteractor: WeatherInteractorInput {
     func getWeather() {
-        weatherService.getCurrentWeather()
+        weatherService.getCurrentWeather { result in
+            switch result {
+            case .success(let entity):
+                DispatchQueue.main.async { [weak self] in
+                    self?.output.didGetCurrentWeather(entity: entity)
+                }
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+                // TO DO: Make error handling
+            }
+        }
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol WeatherViewInput: class, Presentable {
-    func setupInitialState()
+    func setupInitialState(entity: WeatherEntity)
 }
 
 protocol WeatherViewOutput {
@@ -29,6 +29,7 @@ protocol WeatherInteractorInput {
 }
 
 protocol WeatherInteractorOutput: class {
+    func didGetCurrentWeather(entity: WeatherEntity)
 }
 
 protocol WeatherRouterInput {

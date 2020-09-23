@@ -63,6 +63,7 @@
 		E46B90602519EC1B00E0207D /* MapperCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B905F2519EC1B00E0207D /* MapperCore.swift */; };
 		E46B90622519EC2800E0207D /* MapperCoreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90612519EC2800E0207D /* MapperCoreImp.swift */; };
 		E46B90652519EC5A00E0207D /* WeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90642519EC5A00E0207D /* WeatherEntity.swift */; };
+		E46B90682519F3A300E0207D /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90672519F3A300E0207D /* WeatherTableViewCell.swift */; };
 		F506401CADF6608383365C47 /* ForecastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B46A9E3EBD79767212021 /* ForecastInteractor.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		E46B905F2519EC1B00E0207D /* MapperCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapperCore.swift; path = ../../../../../../../../../MapperCore.swift; sourceTree = "<group>"; };
 		E46B90612519EC2800E0207D /* MapperCoreImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapperCoreImp.swift; path = ../../../../../../../../../MapperCoreImp.swift; sourceTree = "<group>"; };
 		E46B90642519EC5A00E0207D /* WeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntity.swift; sourceTree = "<group>"; };
+		E46B90672519F3A300E0207D /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		E6580A9A01540A1377405F19 /* ForecastPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastPresenter.swift; sourceTree = "<group>"; };
 		EDA12BE8E8DCC69AD87A52B9 /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		F0C4A6BF931BA1B6884889C6 /* TabBarAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarAssembler.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		4BFC2C2F40AE5E1AC1BFCA5E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E46B90662519F37900E0207D /* Cells */,
 				E46B90632519EC4900E0207D /* Entity */,
 				766B10D79D1DB96467A39B5A /* WeatherViewController.swift */,
 			);
@@ -737,6 +740,14 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		E46B90662519F37900E0207D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E46B90672519F3A300E0207D /* WeatherTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		E64016065D01EFB9836FD2C3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -941,6 +952,7 @@
 				B33AE57D21ECAD210016966A /* RootAssembler.swift in Sources */,
 				B33AE57921ECAD210016966A /* ApplicationAssembler.swift in Sources */,
 				5D0D3AAB3B17A2839299F7A1 /* WeatherViewController.swift in Sources */,
+				E46B90682519F3A300E0207D /* WeatherTableViewCell.swift in Sources */,
 				5F9FAB6C0F452BCFB4B1752E /* WeatherPresenter.swift in Sources */,
 				3D706062FB026E703A0BB72E /* WeatherInteractor.swift in Sources */,
 				68D349E783AF1E72E4C435C2 /* WeatherRouter.swift in Sources */,
@@ -1117,7 +1129,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexyeskin.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1137,7 +1149,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexyeskin.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

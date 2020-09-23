@@ -8,7 +8,11 @@
 
 import Foundation
 
+enum WeatherServiceError: Error {
+    case error
+}
+
 protocol WeatherService {
-    func getCurrentWeather()
+    func getCurrentWeather(completion: @escaping (Result<WeatherEntity, WeatherServiceError>) -> Void)
     func getForecast()
 }

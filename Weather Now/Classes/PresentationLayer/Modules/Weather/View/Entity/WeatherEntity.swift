@@ -13,8 +13,10 @@ struct WeatherEntity {
     let country: String
     let temperature: Int
     let description: String
-    let humidity: Int
-    let pressure: Int
-    let windSpeed: Int
-    let windDirection: String
+    let additionalInfo: [WeatherAdditionalInfoEntity]
+}
+
+struct WeatherAdditionalInfoEntity {
+    let imageName: String
+    let text: String
 }

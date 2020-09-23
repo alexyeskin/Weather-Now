@@ -25,9 +25,9 @@ struct WeatherResponseModel: Decodable {
 }
 
 struct WeatherInfoResponseModel: Decodable {
-    let temperature: Double
-    let pressure: Double
-    let humidity: Double
+    let temperature: Int
+    let pressure: Int
+    let humidity: Int
     
     enum CodingKeys: String, CodingKey {
         case temperature = "temp"
@@ -37,7 +37,7 @@ struct WeatherInfoResponseModel: Decodable {
 }
 
 struct WeatherWindResponseModel: Decodable {
-    let speed: Double
+    let speed: Int
     let degree: Int
     
     enum CodingKeys: String, CodingKey {

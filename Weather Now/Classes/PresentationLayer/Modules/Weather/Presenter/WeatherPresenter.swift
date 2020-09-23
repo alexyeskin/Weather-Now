@@ -35,4 +35,7 @@ extension WeatherPresenter: WeatherViewOutput {
 // MARK: - WeatherInteractorOutput
 
 extension WeatherPresenter: WeatherInteractorOutput {
+    func didGetCurrentWeather(entity: WeatherEntity) {
+        view.setupInitialState(entity: entity)
+    }
 }
