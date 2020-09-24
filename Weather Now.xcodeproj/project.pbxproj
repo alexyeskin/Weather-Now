@@ -54,6 +54,8 @@
 		DEF9337B540C1BA138FFCC58 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F63FD72B2B681852956C90 /* TabBarInteractor.swift */; };
 		E437E3DF25195E2200E02818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E437E3DE25195E2200E02818 /* Main.storyboard */; };
 		E437E3E12519628000E02818 /* UIViewContoller+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437E3E02519628000E02818 /* UIViewContoller+Extensions.swift */; };
+		E44EDBE2251BFC6A00AFF238 /* ForecastEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44EDBE1251BFC6A00AFF238 /* ForecastEntity.swift */; };
+		E44EDBE5251BFDFC00AFF238 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44EDBE4251BFDFC00AFF238 /* ForecastTableViewCell.swift */; };
 		E46B90532519CFAA00E0207D /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90522519CFAA00E0207D /* NetworkCore.swift */; };
 		E46B90552519CFB500E0207D /* NetworkCoreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90542519CFB500E0207D /* NetworkCoreImp.swift */; };
 		E46B90582519D30000E0207D /* CoordinatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90572519D30000E0207D /* CoordinatesModel.swift */; };
@@ -116,6 +118,8 @@
 		CFD67F53680FC7313C3DE12A /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E437E3DE25195E2200E02818 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E437E3E02519628000E02818 /* UIViewContoller+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewContoller+Extensions.swift"; sourceTree = "<group>"; };
+		E44EDBE1251BFC6A00AFF238 /* ForecastEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastEntity.swift; sourceTree = "<group>"; };
+		E44EDBE4251BFDFC00AFF238 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		E46B90522519CFAA00E0207D /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
 		E46B90542519CFB500E0207D /* NetworkCoreImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreImp.swift; sourceTree = "<group>"; };
 		E46B90572519D30000E0207D /* CoordinatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesModel.swift; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 		999E07339E0AFB3F292AA13F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E44EDBE3251BFDDA00AFF238 /* Cell */,
+				E44EDBE0251BFC5700AFF238 /* Entity */,
 				9649A2EE971258D42F89369D /* ForecastViewController.swift */,
 			);
 			path = View;
@@ -723,6 +729,22 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		E44EDBE0251BFC5700AFF238 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E44EDBE1251BFC6A00AFF238 /* ForecastEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E44EDBE3251BFDDA00AFF238 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E44EDBE4251BFDFC00AFF238 /* ForecastTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E46B90562519D2E000E0207D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -939,6 +961,7 @@
 				B33AE57721ECAD210016966A /* ApplicationConfigurator.swift in Sources */,
 				B33AE57B21ECAD210016966A /* ModuleAssembly.swift in Sources */,
 				B33AE57321ECAD210016966A /* CoreComponentAssembly.swift in Sources */,
+				E44EDBE2251BFC6A00AFF238 /* ForecastEntity.swift in Sources */,
 				B33AE58121ECAD210016966A /* RootConfigurator.swift in Sources */,
 				B33AE58221ECAD210016966A /* RootProtocols.swift in Sources */,
 				B33AE56D21ECAD210016966A /* R.generated.swift in Sources */,
@@ -951,6 +974,7 @@
 				B33AE57521ECAD210016966A /* BusinessLayerAssembly.swift in Sources */,
 				B33AE57D21ECAD210016966A /* RootAssembler.swift in Sources */,
 				B33AE57921ECAD210016966A /* ApplicationAssembler.swift in Sources */,
+				E44EDBE5251BFDFC00AFF238 /* ForecastTableViewCell.swift in Sources */,
 				5D0D3AAB3B17A2839299F7A1 /* WeatherViewController.swift in Sources */,
 				E46B90682519F3A300E0207D /* WeatherTableViewCell.swift in Sources */,
 				5F9FAB6C0F452BCFB4B1752E /* WeatherPresenter.swift in Sources */,

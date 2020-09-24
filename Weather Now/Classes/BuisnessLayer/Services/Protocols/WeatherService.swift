@@ -10,6 +10,8 @@ import Foundation
 
 enum WeatherServiceError: Error {
     case error
+    case innerError
+    case mapperCoreError(MapperCoreError)
 }
 
 protocol WeatherService {

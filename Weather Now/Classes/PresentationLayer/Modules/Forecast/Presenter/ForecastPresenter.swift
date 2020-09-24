@@ -28,6 +28,7 @@ extension ForecastPresenter: ForecastModuleInput {
 
 extension ForecastPresenter: ForecastViewOutput {
     func viewIsReady() {
+        view.setupInitialState()
     }
 }
 

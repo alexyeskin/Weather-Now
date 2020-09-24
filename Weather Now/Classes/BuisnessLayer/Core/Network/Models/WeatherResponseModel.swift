@@ -46,8 +46,18 @@ struct WeatherWindResponseModel: Decodable {
     }
 }
 
+enum WeatherDescriptionType: String, Decodable {
+    case thunderstorm = "Thunderstorm"
+    case drizzle = "Drizzle"
+    case rain = "Rain"
+    case snow = "Snow"
+    case atmosphere = "Atmosphere"
+    case clear = "Clear"
+    case clouds = "Clouds"
+}
+
 struct WeatherDescriptionResponseModel: Decodable {
-    let description: String
+    let description: WeatherDescriptionType
     
     enum CodingKeys: String, CodingKey {
         case description = "main"

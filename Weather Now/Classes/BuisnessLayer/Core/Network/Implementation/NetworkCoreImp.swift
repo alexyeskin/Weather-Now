@@ -48,6 +48,7 @@ final class NetworkCoreImp: NetworkCore {
         from coordinates: CoordinatesModel,
         completion: @escaping (Result<String, NetworkCoreError>) -> Void
     ) {
+        //api.openweathermap.org/data/2.5/forecast?lat=53.9&lon=27.56667&appid=9b3be2f2d86aa88f89de13745272a15e
         guard let url = URL(string: "\(Constants.baseURL)forecast") else {
             completion(.failure(.badURL))
             return

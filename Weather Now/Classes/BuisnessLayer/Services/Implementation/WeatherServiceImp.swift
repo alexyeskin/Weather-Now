@@ -22,9 +22,15 @@ final class WeatherServiceImp: WeatherService {
             
             switch result {
             case .success(let model):
-                let entity = self.mapperCore.mapWeatherResponseModel(model)
-                completion(.success(entity))
-                
+                do {
+                    let entity = try self.mapperCore.mapWeatherResponseModel(model)
+                    completion(.success(entity))
+                } catch let error as MapperCoreError {
+                    completion(.failure(.mapperCoreError(error)))
+                } catch {
+                    completion(.failure(.innerError))
+                }
+
             case .failure(let error):
                 print(error.localizedDescription)
             }

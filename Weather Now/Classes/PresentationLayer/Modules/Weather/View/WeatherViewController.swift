@@ -40,7 +40,6 @@ class WeatherViewController: UIViewController {
     
     private func configWeatherImageView() {
         weatherImageView.contentMode = .scaleAspectFit
-        weatherImageView.image = UIImage(systemName: "sun.max")?.withRenderingMode(.alwaysTemplate)
         weatherImageView.tintColor = .orange
         view.addSubview(weatherImageView)
         
@@ -58,7 +57,7 @@ class WeatherViewController: UIViewController {
         view.addSubview(locationLabel)
         
         locationLabel.snp.makeConstraints { make in
-            make.top.equalTo(weatherImageView.snp.bottom).offset(16)
+            make.top.equalTo(weatherImageView.snp.bottom).offset(8)
             make.left.right.equalToSuperview()
         }
     }
@@ -96,6 +95,8 @@ class WeatherViewController: UIViewController {
     }
 }
 
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
+
 extension WeatherViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return entity?.additionalInfo.count ?? 0
@@ -128,5 +129,6 @@ extension WeatherViewController: WeatherViewInput {
         collectionView?.reloadData()
         locationLabel.text = "\(entity.city), \(entity.country)"
         temperatureLabel.text = "\(entity.temperature)°C | \(entity.description)"
+        weatherImageView.image = UIImage(systemName: entity.imageName)?.withRenderingMode(.alwaysTemplate)
     }
 }
