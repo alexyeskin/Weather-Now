@@ -15,6 +15,7 @@ class WeatherViewController: UIViewController {
     let weatherImageView = UIImageView()
     let locationLabel = UILabel()
     let temperatureLabel = UILabel()
+    let shareButton = UIButton(type: .system)
     var collectionView: UICollectionView?
     
     var entity: WeatherEntity?
@@ -35,6 +36,7 @@ class WeatherViewController: UIViewController {
         configWeatherImageView()
         configLocationLabel()
         configTemperatureLabel()
+        configShareButton()
         configCollectionView()
     }
     
@@ -89,8 +91,32 @@ class WeatherViewController: UIViewController {
         }
         
         collectionView?.snp.makeConstraints { make in
-            make.left.right.bottom.equalToSuperview()
+            make.left.right.equalToSuperview()
             make.top.equalTo(temperatureLabel.snp.bottom).offset(25)
+            make.bottom.equalTo(shareButton.snp.top).offset(-10)
+        }
+    }
+    
+    private func configShareButton() {
+        shareButton.tintColor = .red
+        shareButton.setTitle("Share", for: .normal)
+        shareButton.addTarget(self, action: #selector(actionShare), for: .touchUpInside)
+        view.addSubview(shareButton)
+        
+        shareButton.snp.makeConstraints { make in
+            make.centerY.equalToSuperview().multipliedBy(1.7)
+            make.left.equalTo(30)
+            make.right.equalTo(-30)
+            make.height.equalTo(30)
+        }
+    }
+    
+    // MARK: Action
+    
+    @objc
+    func actionShare() {
+        if let entity = entity {
+            output.actionShare(entity: entity)
         }
     }
 }

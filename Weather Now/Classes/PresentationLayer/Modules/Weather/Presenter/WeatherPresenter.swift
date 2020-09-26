@@ -30,6 +30,11 @@ extension WeatherPresenter: WeatherViewOutput {
     func viewIsReady() {
         interactor.getLocation()
     }
+    
+    func actionShare(entity: WeatherEntity) {
+        let shareInfo = interactor.obtainShareInfo(entity: entity)
+        router.shareInfo(text: shareInfo)
+    }
 }
 
 // MARK: - WeatherInteractorOutput
@@ -41,5 +46,9 @@ extension WeatherPresenter: WeatherInteractorOutput {
     
     func didGetCurrentWeather(entity: WeatherEntity) {
         view.setupInitialState(entity: entity)
+    }
+    
+    func didFailedGetLocation(error: String) {
+        router.showAlert(message: error)
     }
 }

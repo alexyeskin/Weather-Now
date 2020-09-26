@@ -68,6 +68,8 @@
 		E4B68198251D0A2900B3EB92 /* ForecastResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B68197251D0A2900B3EB92 /* ForecastResponseModel.swift */; };
 		E4B6819A251D543000B3EB92 /* LocationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B68199251D543000B3EB92 /* LocationCore.swift */; };
 		E4B6819C251D543B00B3EB92 /* LocationCoreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6819B251D543B00B3EB92 /* LocationCoreImp.swift */; };
+		E4BC14A3251F66BE0011CB18 /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC14A2251F66BE0011CB18 /* ErrorMapper.swift */; };
+		E4BC14A5251F66CA0011CB18 /* ErrorMapperImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC14A4251F66CA0011CB18 /* ErrorMapperImp.swift */; };
 		F506401CADF6608383365C47 /* ForecastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B46A9E3EBD79767212021 /* ForecastInteractor.swift */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,8 @@
 		E4B68197251D0A2900B3EB92 /* ForecastResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponseModel.swift; sourceTree = "<group>"; };
 		E4B68199251D543000B3EB92 /* LocationCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCore.swift; sourceTree = "<group>"; };
 		E4B6819B251D543B00B3EB92 /* LocationCoreImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCoreImp.swift; sourceTree = "<group>"; };
+		E4BC14A2251F66BE0011CB18 /* ErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
+		E4BC14A4251F66CA0011CB18 /* ErrorMapperImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMapperImp.swift; sourceTree = "<group>"; };
 		E6580A9A01540A1377405F19 /* ForecastPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForecastPresenter.swift; sourceTree = "<group>"; };
 		EDA12BE8E8DCC69AD87A52B9 /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		F0C4A6BF931BA1B6884889C6 /* TabBarAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarAssembler.swift; sourceTree = "<group>"; };
@@ -513,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				E4B6819B251D543B00B3EB92 /* LocationCoreImp.swift */,
+				E4BC14A4251F66CA0011CB18 /* ErrorMapperImp.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -521,6 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				E4B68199251D543000B3EB92 /* LocationCore.swift */,
+				E4BC14A2251F66BE0011CB18 /* ErrorMapper.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -979,12 +985,14 @@
 				B33AE57E21ECAD210016966A /* RootPresenter.swift in Sources */,
 				B33AE57821ECAD210016966A /* AppearanceConfigurator.swift in Sources */,
 				B33AE57221ECAD210016966A /* ServicesAssembly.swift in Sources */,
+				E4BC14A3251F66BE0011CB18 /* ErrorMapper.swift in Sources */,
 				B33AE57521ECAD210016966A /* BusinessLayerAssembly.swift in Sources */,
 				E4B6819A251D543000B3EB92 /* LocationCore.swift in Sources */,
 				B33AE57D21ECAD210016966A /* RootAssembler.swift in Sources */,
 				B33AE57921ECAD210016966A /* ApplicationAssembler.swift in Sources */,
 				E44EDBE5251BFDFC00AFF238 /* ForecastTableViewCell.swift in Sources */,
 				5D0D3AAB3B17A2839299F7A1 /* WeatherViewController.swift in Sources */,
+				E4BC14A5251F66CA0011CB18 /* ErrorMapperImp.swift in Sources */,
 				E46B90682519F3A300E0207D /* WeatherTableViewCell.swift in Sources */,
 				5F9FAB6C0F452BCFB4B1752E /* WeatherPresenter.swift in Sources */,
 				3D706062FB026E703A0BB72E /* WeatherInteractor.swift in Sources */,

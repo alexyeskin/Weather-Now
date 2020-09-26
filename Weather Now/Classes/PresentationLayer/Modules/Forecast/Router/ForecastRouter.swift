@@ -15,4 +15,13 @@ class ForecastRouter {
 // MARK: - ForecastRouterInput
 
 extension ForecastRouter: ForecastRouterInput {
+    func showAlert(message: String) {
+        guard let view = view else {
+            return
+        }
+        
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        view.present(alert, animated: true, completion: nil)
+    }
 }

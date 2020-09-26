@@ -14,6 +14,7 @@ protocol WeatherViewInput: class, Presentable {
 
 protocol WeatherViewOutput {
     func viewIsReady()
+    func actionShare(entity: WeatherEntity)
 }
 
 protocol WeatherModuleInput: class {
@@ -27,12 +28,16 @@ protocol WeatherModuleOutput: class {
 protocol WeatherInteractorInput {
     func getLocation()
     func getWeather()
+    func obtainShareInfo(entity: WeatherEntity) -> String
 }
 
 protocol WeatherInteractorOutput: class {
     func didGetLocation()
     func didGetCurrentWeather(entity: WeatherEntity)
+    func didFailedGetLocation(error: String)
 }
 
 protocol WeatherRouterInput {
+    func shareInfo(text: String)
+    func showAlert(message: String)
 }

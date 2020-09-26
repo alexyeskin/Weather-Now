@@ -15,6 +15,7 @@ class WeatherModuleAssembler: Assembly {
             let interactor = WeatherInteractor()
             interactor.output = presenter
             interactor.weatherService = resolver.resolve(WeatherService.self)
+            interactor.errorMapper = resolver.resolve(ErrorMapper.self)
             
             return interactor
         }

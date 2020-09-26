@@ -38,4 +38,8 @@ extension ForecastPresenter: ForecastInteractorOutput {
     func didGetForecast(entity: ForecastEntity) {
         view.setupInitialState(entity: entity)
     }
+    
+    func didFailedGetLocation(error: String) {
+        router.showAlert(message: error)
+    }
 }

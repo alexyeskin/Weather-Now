@@ -33,12 +33,13 @@ final class NetworkCoreImp: NetworkCore {
             switch response.result {
             case .success(let data):
                 guard let model = try? JSONDecoder().decode(WeatherResponseModel.self, from: data) else {
-                    completion(.failure(.decodingError))
+                    completion(.failure(.badResponse))
                     return
                 }
                 completion(.success(model))
                 
             case .failure(let error):
+                completion(.failure(.networkError))
                 print(error.localizedDescription)
             }
         }
@@ -70,12 +71,13 @@ final class NetworkCoreImp: NetworkCore {
                 decoder.dateDecodingStrategy = .secondsSince1970
                 
                 guard let model = try? decoder.decode(ForecastResponseModel.self, from: data) else {
-                    completion(.failure(.decodingError))
+                    completion(.failure(.badResponse))
                     return
                 }
                 completion(.success(model))
                 
             case .failure(let error):
+                completion(.failure(.networkError))
                 print(error.localizedDescription)
             }
         }

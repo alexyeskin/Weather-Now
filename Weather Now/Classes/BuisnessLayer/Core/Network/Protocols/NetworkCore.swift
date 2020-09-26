@@ -10,8 +10,8 @@ import Foundation
 
 enum NetworkCoreError: Error {
     case badURL
-    case decodingError
-    case noConnection
+    case badResponse
+    case networkError
 }
 
 protocol NetworkCore {

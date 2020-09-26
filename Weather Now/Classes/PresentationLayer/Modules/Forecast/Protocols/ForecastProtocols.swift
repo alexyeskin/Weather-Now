@@ -30,7 +30,9 @@ protocol ForecastInteractorInput {
 
 protocol ForecastInteractorOutput: class {
     func didGetForecast(entity: ForecastEntity)
+    func didFailedGetLocation(error: String)
 }
 
 protocol ForecastRouterInput {
+    func showAlert(message: String)
 }

@@ -24,5 +24,10 @@ final class CoreComponentAssembly: Assembly {
             let core = LocationCoreImp()
             return core
         }.inObjectScope(.container)
+        
+        container.register(ErrorMapper.self) { _ in
+            let core = ErrorMapperImp()
+            return core
+        }.inObjectScope(.container)
     }
 }

@@ -11,13 +11,18 @@ import Foundation
 class ForecastInteractor {
     weak var output: ForecastInteractorOutput!
     var weatherService: WeatherService!
+    var errorMapper: ErrorMapper!
 }
 
 // MARK: - ForecastInteractorInput
 
 extension ForecastInteractor: ForecastInteractorInput {
     func getForecast() {
-        weatherService.getForecast { result in
+        weatherService.getForecast { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            
             switch result {
             case .success(let entity):
                 DispatchQueue.main.async { [weak self] in
@@ -25,8 +30,10 @@ extension ForecastInteractor: ForecastInteractorInput {
                 }
                 
             case .failure(let error):
-                print(error.localizedDescription)
-                // TO DO: Make error handling
+                let mappedError = self.errorMapper.mapWeatherError(error)
+                DispatchQueue.main.async { [weak self] in
+                    self?.output.didFailedGetLocation(error: mappedError)
+                }
             }
         }
     }

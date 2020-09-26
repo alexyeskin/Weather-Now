@@ -15,6 +15,7 @@ class ForecastModuleAssembler: Assembly {
             let interactor = ForecastInteractor()
             interactor.output = presenter
             interactor.weatherService = resolver.resolve(WeatherService.self)
+            interactor.errorMapper = resolver.resolve(ErrorMapper.self)
             
             return interactor
         }
