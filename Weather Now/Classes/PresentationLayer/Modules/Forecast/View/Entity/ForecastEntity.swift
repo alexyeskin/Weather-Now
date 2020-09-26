@@ -19,7 +19,13 @@ struct ForecastDayEntity {
 
 struct ForecastHourEntity {
     let imageName: String
-    let timeTitle: String
+    let date: Date
     let description: String
     let temperature: Int
+    
+    var stringDate: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter.string(from: date)
+    }
 }

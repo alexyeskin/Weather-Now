@@ -16,6 +16,21 @@ class WeatherInteractor {
 // MARK: - WeatherInteractorInput
 
 extension WeatherInteractor: WeatherInteractorInput {
+    func getLocation() {
+        weatherService.getCurrentLocation { result in
+            switch result {
+            case .success:
+                DispatchQueue.main.async { [weak self] in
+                    self?.output.didGetLocation()
+                }
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+                //to do map error
+            }
+        }
+    }
+    
     func getWeather() {
         weatherService.getCurrentWeather { result in
             switch result {

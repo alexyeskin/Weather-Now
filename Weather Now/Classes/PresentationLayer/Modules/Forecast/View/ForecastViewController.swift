@@ -96,10 +96,12 @@ extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.iconImageView.image = UIImage(systemName: "sun.max")
-        cell.timeLabel.text = entity.days[indexPath.section].hours[indexPath.row].timeTitle
-        cell.descriptionLabel.text = entity.days[indexPath.section].hours[indexPath.row].description
-        cell.temperatureLabel.text = entity.days[indexPath.section].hours[indexPath.row].temperature.description
+        let hour = entity.days[indexPath.section].hours[indexPath.row]
+        
+        cell.iconImageView.image = UIImage(systemName: hour.imageName)?.withRenderingMode(.alwaysTemplate)
+        cell.timeLabel.text = hour.stringDate
+        cell.descriptionLabel.text = hour.description
+        cell.temperatureLabel.text = "\(hour.temperature)°"
         
         return cell
     }
@@ -116,16 +118,8 @@ extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK: - ForecastViewInput
 
 extension ForecastViewController: ForecastViewInput {
-	func setupInitialState() {
-        let hour1 = ForecastHourEntity(imageName: "13", timeTitle: "11", description: "desc", temperature: 10)
-        let hour2 = ForecastHourEntity(imageName: "13", timeTitle: "22", description: "desc", temperature: 11)
-        let hour3 = ForecastHourEntity(imageName: "13", timeTitle: "22", description: "desc", temperature: 12)
-        
-        let day1 = ForecastDayEntity(dayTitle: "Friday", hours: [hour1, hour2, hour3])
-        let day2 = ForecastDayEntity(dayTitle: "Sut", hours: [hour1, hour2, hour3])
-        let day3 = ForecastDayEntity(dayTitle: "Sun", hours: [hour1, hour2, hour3])
-        entity = ForecastEntity(days: [day1, day2, day3])
-        
+    func setupInitialState(entity: ForecastEntity) {
+        self.entity = entity
         tableView.reloadData()
-  	}
+    }
 }

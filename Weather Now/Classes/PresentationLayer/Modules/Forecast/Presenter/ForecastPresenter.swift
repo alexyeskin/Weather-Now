@@ -28,11 +28,14 @@ extension ForecastPresenter: ForecastModuleInput {
 
 extension ForecastPresenter: ForecastViewOutput {
     func viewIsReady() {
-        view.setupInitialState()
+        interactor.getForecast()
     }
 }
 
 // MARK: - ForecastInteractorOutput
 
 extension ForecastPresenter: ForecastInteractorOutput {
+    func didGetForecast(entity: ForecastEntity) {
+        view.setupInitialState(entity: entity)
+    }
 }

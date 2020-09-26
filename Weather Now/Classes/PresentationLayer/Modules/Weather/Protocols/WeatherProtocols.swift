@@ -25,10 +25,12 @@ protocol WeatherModuleOutput: class {
 }
 
 protocol WeatherInteractorInput {
+    func getLocation()
     func getWeather()
 }
 
 protocol WeatherInteractorOutput: class {
+    func didGetLocation()
     func didGetCurrentWeather(entity: WeatherEntity)
 }
 

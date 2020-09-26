@@ -14,6 +14,7 @@ final class ServicesAssembly: Assembly {
             let service = WeatherServiceImp()
             service.networkCore = resolver.resolve(NetworkCore.self)
             service.mapperCore = resolver.resolve(MapperCore.self)
+            service.locationCore = resolver.resolve(LocationCore.self)
             return service
         }
     }

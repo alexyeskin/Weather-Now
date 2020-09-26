@@ -13,4 +13,6 @@ enum Constants {
     static let apiKey = "9b3be2f2d86aa88f89de13745272a15e"
     static let latitude = "53.9"
     static let longitude = "27.56667"
+    
+    static let coordinatesKey = "kCoordinates"
 }

@@ -28,13 +28,17 @@ extension WeatherPresenter: WeatherModuleInput {
 
 extension WeatherPresenter: WeatherViewOutput {
     func viewIsReady() {
-        interactor.getWeather()
+        interactor.getLocation()
     }
 }
 
 // MARK: - WeatherInteractorOutput
 
 extension WeatherPresenter: WeatherInteractorOutput {
+    func didGetLocation() {
+        interactor.getWeather()
+    }
+    
     func didGetCurrentWeather(entity: WeatherEntity) {
         view.setupInitialState(entity: entity)
     }

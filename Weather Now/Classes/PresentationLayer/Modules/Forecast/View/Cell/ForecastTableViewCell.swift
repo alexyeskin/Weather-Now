@@ -60,7 +60,7 @@ class ForecastTableViewCell: UITableViewCell {
     
     private func configTimeLabel() {
         timeLabel.font = .systemFont(ofSize: 14)
-        timeLabel.textAlignment = .center
+        timeLabel.textAlignment = .left
         timeLabel.textColor = .black
         
         stackView.addArrangedSubview(timeLabel)
@@ -68,7 +68,7 @@ class ForecastTableViewCell: UITableViewCell {
     
     private func configDescriptionLabel() {
         descriptionLabel.font = .systemFont(ofSize: 14)
-        descriptionLabel.textAlignment = .center
+        descriptionLabel.textAlignment = .left
         descriptionLabel.textColor = .black
         
         stackView.addArrangedSubview(descriptionLabel)

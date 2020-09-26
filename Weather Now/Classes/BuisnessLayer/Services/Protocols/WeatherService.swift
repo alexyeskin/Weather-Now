@@ -8,13 +8,22 @@
 
 import Foundation
 
+enum StorageError: Error {
+    case encodingError
+    case decodingError
+    case valueNotFound
+}
+
 enum WeatherServiceError: Error {
-    case error
     case innerError
+    case networkCoreError(NetworkCoreError)
     case mapperCoreError(MapperCoreError)
+    case locationCoreError(LocationCoreError)
+    case storageError(StorageError)
 }
 
 protocol WeatherService {
     func getCurrentWeather(completion: @escaping (Result<WeatherEntity, WeatherServiceError>) -> Void)
-    func getForecast()
+    func getForecast(completion: @escaping (Result<ForecastEntity, WeatherServiceError>) -> Void)
+    func getCurrentLocation(completion: @escaping (Result<Void, WeatherServiceError>) -> Void)
 }

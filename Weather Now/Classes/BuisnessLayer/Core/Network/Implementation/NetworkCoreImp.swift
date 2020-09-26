@@ -46,16 +46,16 @@ final class NetworkCoreImp: NetworkCore {
     
     func loadForecast(
         from coordinates: CoordinatesModel,
-        completion: @escaping (Result<String, NetworkCoreError>) -> Void
+        completion: @escaping (Result<ForecastResponseModel, NetworkCoreError>) -> Void
     ) {
-        //api.openweathermap.org/data/2.5/forecast?lat=53.9&lon=27.56667&appid=9b3be2f2d86aa88f89de13745272a15e
-        guard let url = URL(string: "\(Constants.baseURL)forecast") else {
+        guard let url = URL(string: "\(Constants.baseURL)/forecast") else {
             completion(.failure(.badURL))
             return
         }
         let parameters: Parameters = [
             "lat": coordinates.latitude,
             "lon": coordinates.longitude,
+            "units": "metric",
             "appid": Constants.apiKey
         ]
         
@@ -66,7 +66,14 @@ final class NetworkCoreImp: NetworkCore {
         ).responseData { response in
             switch response.result {
             case .success(let data):
-                print(data.description)
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .secondsSince1970
+                
+                guard let model = try? decoder.decode(ForecastResponseModel.self, from: data) else {
+                    completion(.failure(.decodingError))
+                    return
+                }
+                completion(.success(model))
                 
             case .failure(let error):
                 print(error.localizedDescription)

@@ -22,6 +22,6 @@ protocol NetworkCore {
     
     func loadForecast(
         from coordinates: CoordinatesModel,
-        completion: @escaping (Result<String, NetworkCoreError>) -> Void
+        completion: @escaping (Result<ForecastResponseModel, NetworkCoreError>) -> Void
     )
 }

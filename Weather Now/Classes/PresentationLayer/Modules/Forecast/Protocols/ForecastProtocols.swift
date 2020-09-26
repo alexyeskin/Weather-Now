@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ForecastViewInput: class, Presentable {
-    func setupInitialState()
+    func setupInitialState(entity: ForecastEntity)
 }
 
 protocol ForecastViewOutput {
@@ -25,9 +25,11 @@ protocol ForecastModuleOutput: class {
 }
 
 protocol ForecastInteractorInput {
+    func getForecast()
 }
 
 protocol ForecastInteractorOutput: class {
+    func didGetForecast(entity: ForecastEntity)
 }
 
 protocol ForecastRouterInput {

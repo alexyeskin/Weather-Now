@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7F1435B0-CA99-42AE-B419-BB6F7BC25D00"
+            uuid = "A7265900-EB94-4053-99F2-BBE4531948A2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather Now/Classes/BuisnessLayer/Core/Network/Implementation/NetworkCoreImp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "loadForecast(from:completion:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "loadCurrentWeather(from:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ACC48765-A6E6-4C95-BE90-2CFF43CBA752"
+            uuid = "F30897DA-90A7-40DA-A160-49C1B974D365"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather Now/Classes/BuisnessLayer/Core/Network/Implementation/NetworkCoreImp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "loadForecast(from:completion:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadCurrentWeather(from:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
