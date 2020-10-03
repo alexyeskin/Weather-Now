@@ -61,10 +61,10 @@
 		E46B905A2519D47B00E0207D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90592519D47B00E0207D /* WeatherService.swift */; };
 		E46B905C2519D48A00E0207D /* WeatherServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B905B2519D48A00E0207D /* WeatherServiceImp.swift */; };
 		E46B905E2519E5B600E0207D /* WeatherResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B905D2519E5B600E0207D /* WeatherResponseModel.swift */; };
-		E46B90602519EC1B00E0207D /* MapperCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B905F2519EC1B00E0207D /* MapperCore.swift */; };
-		E46B90622519EC2800E0207D /* MapperCoreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90612519EC2800E0207D /* MapperCoreImp.swift */; };
 		E46B90652519EC5A00E0207D /* WeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90642519EC5A00E0207D /* WeatherEntity.swift */; };
 		E46B90682519F3A300E0207D /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B90672519F3A300E0207D /* WeatherTableViewCell.swift */; };
+		E4962D6E25293093006586CF /* MapperCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4962D6D25293093006586CF /* MapperCore.swift */; };
+		E4962D712529309B006586CF /* MapperCoreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4962D702529309A006586CF /* MapperCoreImp.swift */; };
 		E4B68198251D0A2900B3EB92 /* ForecastResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B68197251D0A2900B3EB92 /* ForecastResponseModel.swift */; };
 		E4B6819A251D543000B3EB92 /* LocationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B68199251D543000B3EB92 /* LocationCore.swift */; };
 		E4B6819C251D543B00B3EB92 /* LocationCoreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6819B251D543B00B3EB92 /* LocationCoreImp.swift */; };
@@ -129,10 +129,10 @@
 		E46B90592519D47B00E0207D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		E46B905B2519D48A00E0207D /* WeatherServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceImp.swift; sourceTree = "<group>"; };
 		E46B905D2519E5B600E0207D /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
-		E46B905F2519EC1B00E0207D /* MapperCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapperCore.swift; path = ../../../../../../../../../MapperCore.swift; sourceTree = "<group>"; };
-		E46B90612519EC2800E0207D /* MapperCoreImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapperCoreImp.swift; path = ../../../../../../../../../MapperCoreImp.swift; sourceTree = "<group>"; };
 		E46B90642519EC5A00E0207D /* WeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntity.swift; sourceTree = "<group>"; };
 		E46B90672519F3A300E0207D /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		E4962D6D25293093006586CF /* MapperCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapperCore.swift; sourceTree = "<group>"; };
+		E4962D702529309A006586CF /* MapperCoreImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapperCoreImp.swift; sourceTree = "<group>"; };
 		E4B68197251D0A2900B3EB92 /* ForecastResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponseModel.swift; sourceTree = "<group>"; };
 		E4B68199251D543000B3EB92 /* LocationCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCore.swift; sourceTree = "<group>"; };
 		E4B6819B251D543B00B3EB92 /* LocationCoreImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCoreImp.swift; sourceTree = "<group>"; };
@@ -492,7 +492,7 @@
 		B33AE53821ECAD210016966A /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				E46B90612519EC2800E0207D /* MapperCoreImp.swift */,
+				E4962D702529309A006586CF /* MapperCoreImp.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -500,7 +500,7 @@
 		B33AE53921ECAD210016966A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E46B905F2519EC1B00E0207D /* MapperCore.swift */,
+				E4962D6D25293093006586CF /* MapperCore.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -969,7 +969,6 @@
 				E4B68198251D0A2900B3EB92 /* ForecastResponseModel.swift in Sources */,
 				B33AE56A21ECAD210016966A /* Presentable.swift in Sources */,
 				B33AE57A21ECAD210016966A /* AppDelegate.swift in Sources */,
-				E46B90622519EC2800E0207D /* MapperCoreImp.swift in Sources */,
 				B33AE58421ECAD210016966A /* RootRouter.swift in Sources */,
 				B33AE57721ECAD210016966A /* ApplicationConfigurator.swift in Sources */,
 				B33AE57B21ECAD210016966A /* ModuleAssembly.swift in Sources */,
@@ -1002,7 +1001,6 @@
 				9C2F715C61AC62A6B6403A04 /* WeatherAssembler.swift in Sources */,
 				E46B905C2519D48A00E0207D /* WeatherServiceImp.swift in Sources */,
 				E46B905A2519D47B00E0207D /* WeatherService.swift in Sources */,
-				E46B90602519EC1B00E0207D /* MapperCore.swift in Sources */,
 				59ACBDF32FEE2B23E4FFA8C4 /* WeatherProtocols.swift in Sources */,
 				6739AE7097BF53A21CABCFC5 /* ForecastViewController.swift in Sources */,
 				A3426322E60922E435CA8CF1 /* ForecastPresenter.swift in Sources */,
@@ -1014,7 +1012,9 @@
 				069B272251B618BF528BBCD9 /* ForecastAssembler.swift in Sources */,
 				7D6706A4E80411F326C0B3C6 /* ForecastProtocols.swift in Sources */,
 				460452666A68C358A2703178 /* TabBarViewController.swift in Sources */,
+				E4962D6E25293093006586CF /* MapperCore.swift in Sources */,
 				7CF6F113670F4923362AF5A2 /* TabBarPresenter.swift in Sources */,
+				E4962D712529309B006586CF /* MapperCoreImp.swift in Sources */,
 				DEF9337B540C1BA138FFCC58 /* TabBarInteractor.swift in Sources */,
 				6A3932E6DC9AADFA9319756E /* TabBarRouter.swift in Sources */,
 				2694E0828E887668F03D3BC0 /* TabBarConfigurator.swift in Sources */,
